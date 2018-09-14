@@ -39,7 +39,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-sinon": "^1.0.5",
     "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^3.0.0",
+    "karma-webpack": "3.0.4",
     "mocha": "^5.2.0",
     "node-firefox-connect": "^1.2.0",
     "node-sass": "^4.9.2",
