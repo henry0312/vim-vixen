@@ -64,6 +64,7 @@ export default {
   // Url yank/paste
   URLS_YANK: 'urls.yank',
   URLS_PASTE: 'urls.paste',
+  URLS_MARKDOWN: 'urls.markdown',
 
   // Find
   FIND_START: 'find.start',

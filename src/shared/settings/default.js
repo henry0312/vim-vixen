@@ -53,6 +53,7 @@ export default {
     "gi": { "type": "focus.input" },
     "gf": { "type": "page.source" },
     "y": { "type": "urls.yank" },
+    "Y": { "type": "urls.markdown" },
     "p": { "type": "urls.paste", "newTab": false },
     "P": { "type": "urls.paste", "newTab": true },
     "/": { "type": "find.start" },

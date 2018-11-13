@@ -92,6 +92,10 @@ const exec = (operation, repeat, settings, addonEnabled) => {
       window, operation.newTab ? operation.newTab : false, settings.search
     );
     break;
+  case operations.URLS_MARKDOWN:
+    urls.markdown(window);
+    consoleFrames.postInfo(window.document, 'Current url yanked as markdown');
+    break;
   default:
     browser.runtime.sendMessage({
       type: messages.BACKGROUND_OPERATION,

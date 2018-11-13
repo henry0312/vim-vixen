@@ -37,4 +37,21 @@ const paste = (win, newTab, searchSettings) => {
   textarea.remove();
 };
 
-export { yank, paste };
+const markdown = (win) => {
+  let input = win.document.createElement('input');
+  win.document.body.append(input);
+
+  let url = win.location.href;
+  let title = win.document.title;
+
+  input.style.position = 'fixed';
+  input.style.top = '-100px';
+  input.value = `[${title}](${url})`;
+  input.select();
+
+  win.document.execCommand('copy');
+
+  input.remove();
+};
+
+export { yank, paste, markdown };
